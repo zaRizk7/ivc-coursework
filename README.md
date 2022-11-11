@@ -124,3 +124,24 @@ The proportion of marks are explained in the table:
 | Performance on the dataset | 25% |
 | Clear MATLAB or Python code | 15% |
 | Discussion of results | 10% |
+
+## Publication of Solutions
+  
+We will not publish a solution set of code. You may make public your solution but only 2 weeks after the submission date. Making the solutions public before then will create suspicions about why you made them public.
+  
+Good Scholarly Practice:
+Please remember the University requirement as regards all assessed work. Details about this can be found at: http://web.inf.ed.ac.uk/infweb/admin/policies/academic-misconduct
+
+Furthermore, you are required to take reasonable measures to protect your assessed work from unauthorised access. For example, if you put any such work on a public repository then you must set access permissions appropriately (generally permitting access only to yourself, or your group in the case of group practicals). 
+  
+## Plagiarism Avoidance Advice
+
+You are expected to write the document in your own words. Short quotations (with proper, explicit attribution) are allowed, but the bulk of the submission should be your own work. Use proper citation style for all citations, whether traditional paper resources or web-based materials. If you use small amounts of code from another student or the web, you must acknowledge the original source and make clear what portions of the code were yours and what was obtained elsewhere. 
+  
+The school has a robust policy on plagiarism that can be viewed here: http://web.inf.ed.ac.uk/infweb/admin/policies/guidelines-plagiarism .
+
+The school uses various techniques to detect plagiarism, included automated tools and comparison against on-line repositories. Remember: a weak assignment is not a ruined career (and may not reduce your final average more than 1%), but getting caught at plagiarism could ruin it.
+  
+## Late Coursework policy
+
+Please see university-set guidelines regarding late submission and penalties for the same: https://web.inf.ed.ac.uk/infweb/admin/policies/late-submission-coursework
