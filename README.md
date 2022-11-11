@@ -63,9 +63,9 @@ To each pixel, add a Gaussian distributed random number with 10 increasing stand
 Create test images by blurring the original image by 3x3 mask:
 
 $$
-\left(\begin{array}{cc} 
+\frac{\left(\begin{array}{cc} 
 1 & 2 & 1\\
 2 & 4 & 2\\
 1 & 2 & 1
-\end{array}\right)
+\end{array}\right)}{16}
 $$
