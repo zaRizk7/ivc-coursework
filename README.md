@@ -117,6 +117,7 @@ A single, joint, report is to be submitted. Split the work so that each partner 
 The deadline for submission is **25/11/2022**. Please make your submission anonymous (ie. no identifying information in the PDF). Name the submitted PDF file as: <student-number-1><studentnumber-2>1.pdf. Submit your report in PDF online using Learn. Details will be circulated later.
   
 The proportion of marks are explained in the table: 
+  
 | Issue | Percentage |
 | Clear description of algorithms used | 50% |
 | Performance on the dataset | 25% |
