@@ -69,3 +69,56 @@ $$
 1 & 2 & 1
 \end{array}\right)
 $$
+
+Repeatedly convolve the image with the mask 0 times, 1 time, 2 times, ... 9 times. This approximates Gaussian blurring with increasingly larger standard deviations.
+
+## Image Contrast Increase
+
+Create test images by multiplying each pixel by { 1.0, 1.01, 1.02, 1.03, 1.04, 1.05, 1.1, 1.15, 1.20, 1.25 }. Make sure that the pixel values are integers in the range 0..255 (e.g. replace > 255 values by 255).
+
+## Image Contrast Decrease
+
+Create test images by multiplying each pixel by { 1.0, 0.95, 0.90, 0.85, 0.80, 0.60, 0.40, 0.30, 0.20, 0.10 }.
+
+## Image Brightness Increase
+
+Create test images by adding to each pixel: { 0, 5, 10, 15, 20, 25, 30, 35, 40, 45 }. Make sure that the pixel values are integers in the range 0..255 (e.g. replace > 255 values by 255). 
+
+## Image Brightness Decrease
+
+Create test images by subtracting from each pixel: { 0, 5, 10, 15, 20, 25, 30, 35, 40, 45 }. Make sure that the pixel values are integers in the range 0..255 (e.g. replace < 0 values by 0). 
+
+## Occlusion of the Image Increase
+
+In each test image, replace a randomly placed square region of the image by black pixels with square edge length of { 0, 5, 10, 15, 20, 25, 30, 35, 40, 45 }.
+
+## Salt and Pepper Noise
+
+To each test image, add salt and pepper noise of increasing strength. Essentially replace the amount in skimage.util.random_noise(...) with {0.00, 0.02, 0.04, 0.06, 0.08, 0.10, 0.12, 0.14, 0.16, 0.18}.
+
+## Your Report
+
+Each team writes and submits a single report (10 pages long plus code in an appendix) that describes:
+- The components that you selected and connected together for each of the two classifiers.
+- How you trained each of the classifiers on the ‘clean’ dataset.
+- The algorithms that you used to perturb the test images in each exploration. 
+- Plots of the classification performance as a function of increasing perturbation.
+- Discussion of the robustness of the 2 classification approaches to the different types of perturbation.
+- As an appendix, add the code that your team wrote. Do not include the code that was downloaded from other web sites, but include a statement about what code was used and where it came from. 
+
+## Other Comments
+
+The assignment is estimated to take 30 hours coding/test and 5 hours report writing per person, resulting in a 10 page report plus the code appendix.
+
+A single, joint, report is to be submitted. Split the work so that each partner can do most work independently (i.e. share the work rather than duplicate it).
+
+## Assignment Submission
+
+The deadline for submission is **25/11/2022**. Please make your submission anonymous (ie. no identifying information in the PDF). Name the submitted PDF file as: <student-number-1><studentnumber-2>1.pdf. Submit your report in PDF online using Learn. Details will be circulated later.
+  
+The proportion of marks are explained in the table: 
+| Issue | Percentage |
+| Clear description of algorithms used | 50% |
+| Performance on the dataset | 25% |
+| Clear MATLAB or Python code | 15% |
+| Discussion of results | 10% |
