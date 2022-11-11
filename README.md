@@ -37,7 +37,7 @@ The work below can be done using either Matlab or Python (or any other language 
 The ResNet18 classifier is an end-to-end classifier that has an image as input and, in this case, has 8 outputs. You will use a ‘pretrained’ network but will need to do some additional re-training so it classifies just the 8 characters. Ideally, this means ‘freezing’ the convolutional layers, replacing the fully connected layers for 8 classes, and then retraining just the fully connected layers. However, don’t worry if you cannot ‘freeze’ the convolutional layers, and have to tune the whole pre-trained network. You can do data augmentation to improve the training. This should be limited to translation, rotation, flipping, and scale variations. You might explore some of the values of the hyperparameters associated with the fully connected layers, such as the number of layers, size of layers, learning rate, etc. You should split the training data into training and validation, but not touch the test data until the inference stage.
 There are several sources for pretrained ResNet18 in either Matlab or Python: 
 - MATLAB: https://www.mathworks.com/help/deeplearning/ref/resnet18.html
-- PyTorch: https://pytorch.org/docs/stable/torchvision/models.html or pytorch: https://docs.fast.ai/quickstart.html
+- PyTorch: https://pytorch.org/docs/stable/torchvision/models.html or Fast.ai: https://docs.fast.ai/quickstart.html
 
 You are welcome to use other sources. 
 
