@@ -119,6 +119,7 @@ The deadline for submission is **25/11/2022**. Please make your submission anony
 The proportion of marks are explained in the table: 
   
 | Issue | Percentage |
+| :--- | -----------: |
 | Clear description of algorithms used | 50% |
 | Performance on the dataset | 25% |
 | Clear MATLAB or Python code | 15% |
