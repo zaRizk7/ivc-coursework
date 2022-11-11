@@ -46,6 +46,7 @@ You are welcome to use other sources.
 For the input feature to the SVM. Here we use HoG and/or SIFT feature detection in OpenCV and from this create a Bag of Visual Words (BoVW) for each image which we then use to train the SVM model. Python code for HOG can be seen in the link below, similar MATLAB code can also be found: https://scikit-image.org/docs/dev/auto_examples/features_detection/plot_hog.html
 
 Some Matlab SVM code can be found in the following links listed below: https://uk.mathworks.com/help/stats/support-vector-machinesforbinaryclassification.html or https://uk.mathworks.com/discovery/support-vectormachine.html
+
 Some Python SVM code is at: https://scikit-learn.org/stable/modules/svm.html
 
 As with the ResNet18 training, one should use the training and validation data samples to tune the algorithm, before computing test performance with the independent test data subset.
