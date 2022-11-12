@@ -6,11 +6,15 @@ GAUSSIAN_3X3_WEIGHT = np.array([[1, 2, 1], [2, 4, 2], [1, 2, 1]])
 GAUSSIAN_3X3_WEIGHT = np.divide(GAUSSIAN_3X3_WEIGHT, 16)
 
 
-def load_image(directory, size=None):
+def load_image(directory, to_rgb=True, size=None):
     image = cv2.imread(directory)
-    image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+
+    if to_rgb:
+        image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+
     if not size is None:
         image = cv2.resize(image, size)
+
     return np.uint16(image)
 
 
@@ -21,11 +25,14 @@ def clip(image):
 def convolve(image, weight):
     args = dict(mode="same", boundary="symm")
     size = np.shape(image)
+
     if len(size) < 3:
         image = convolve2d(image, weight, **args)
         return clip(image)
+
     for i in range(size[-1]):
         image[..., i] = convolve2d(image[..., i], weight, **args)
+
     return clip(image)
 
 
@@ -40,7 +47,9 @@ def gaussian_blur(image, num_convolve):
 
 def gaussian_pixel_noise(image, std):
     size = np.shape(image)
+
     noise = np.random.normal(scale=std, size=size)
+
     return clip(image + noise)
 
 
@@ -62,6 +71,7 @@ def occlusion(image, edge_length):
     w_end = w_start + edge_length
 
     mask = np.zeros([edge_length] * 2).astype(np.int16)
+
     if len(size) > 2:
         mask = np.expand_dims(mask, -1)
 
@@ -73,6 +83,7 @@ def occlusion(image, edge_length):
 
 def salt_and_pepper(image, rate):
     size = np.shape(image)
+
     mask1 = np.random.random(size) < rate
     mask2 = np.random.random(size) < 0.5
 
