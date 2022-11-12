@@ -37,6 +37,7 @@ def convolve(image, weight):
 
 
 def gaussian_blur(image, num_convolve):
+    num_convolve = np.uint16(num_convolve)
     image_copy = np.copy(image)
 
     for _ in range(num_convolve):
@@ -62,6 +63,7 @@ def change_brightness(image, value):
 
 
 def occlusion(image, edge_length):
+    edge_length = np.uint16(edge_length)
     size = np.shape(image)
 
     h_start = np.random.randint(image.shape[0] - edge_length)
@@ -70,7 +72,7 @@ def occlusion(image, edge_length):
     w_start = np.random.randint(image.shape[1] - edge_length)
     w_end = w_start + edge_length
 
-    mask = np.zeros([edge_length] * 2).astype(np.int16)
+    mask = np.uint16(np.zeros([edge_length] * 2))
 
     if len(size) > 2:
         mask = np.expand_dims(mask, -1)
