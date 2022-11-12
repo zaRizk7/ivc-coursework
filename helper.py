@@ -46,7 +46,7 @@ def scale_contrast(image, scale):
     return clip(image * scale)
 
 
-def scale_brightness(image, value):
+def change_brightness(image, value):
     return clip(image + value)
 
 
