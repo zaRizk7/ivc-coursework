@@ -122,9 +122,9 @@ The proportion of marks are explained in the table:
 | Issue | Percentage |
 | :--- | -----------: |
 | Clear description of algorithms used | 50% |
-| Performance on the dataset | 25% |
+| Performance on the dataset | 10% |
 | Clear MATLAB or Python code | 15% |
-| Discussion of results | 10% |
+| Discussion of results | 25% |
 
 ## Publication of Solutions
   
