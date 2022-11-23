@@ -20,10 +20,18 @@ GAUSSIAN_3X3_WEIGHT = np.array([[1, 2, 1], [2, 4, 2], [1, 2, 1]])
 GAUSSIAN_3X3_WEIGHT = np.divide(GAUSSIAN_3X3_WEIGHT, 16)
 
 
-def load_image(directory):
+def load_image(directory, size=(224, 224)):
     image = cv2.imread(directory)
     image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+    if not size is None:
+        image = cv2.resize(image, size)
     return np.uint16(image)
+
+
+def save_image(image, save_path):
+    image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
+    if not cv2.imwrite(save_path, image):
+        raise ValueError(f"Unable to save to {save_path}!")
 
 
 def clip(image):
